@@ -1,27 +1,41 @@
-$colorBlack: rgba(black, 0.7)
-    
+$colorBlack: rgba(black, 0.85)
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap')
+
 @font-face 
     font-family: 'Gotham-Medium'
-    src: url('../assets/font/Gotham-Medium.woff2') format('woff2') url('../assets/font/Gotham-Medium.woff') format('woff')
+    src: url('../assets/font/Gotham-Medium.woff') format('woff')
     font-weight: 500
     font-style: normal
     font-display: swap
 
 @font-face 
     font-family: 'Gotham-Book'
-    src: url('../assets/font/Gotham-Book.woff2') format('woff2') url('../assets/font/Gotham-Book.woff') format('woff')
+    src: url('../assets/font/Gotham-Book.woff') format('woff')
     font-weight: 500
     font-style: normal
     font-display: swap
+
+@keyframes moveArrow
+    0%
+        transform: scale(4, 1.8) translateY(0)
+    50%
+        transform: scale(4, 1.8) translateY(5px)
+    // 60%
+    //     transform: scale(4, 1.8) translateY(0)
+    100%
+        transform: scale(4, 1.8) translateY(2px)
+        
 
 *
     // position: relative
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, a
     font-family: 'Gotham-Medium'
 p
     font-family: 'Gotham-Book'
-
+h2
+    color: rgba(black, 0.7)
 
 img.logo
     width: 120px
@@ -30,11 +44,11 @@ img.logo
     left: 15px
 .navbar-light .navbar-nav a.nav-link
     color: $colorBlack
-    margin-left: 3px
-    margin-right: 3px
-    font-weight: 700
-    font-size: 14.5px
-    letter-spacing: .5px
+    margin-left: 8px
+    margin-right: 8px
+    font-weight: 500
+    font-size: 15px
+    // letter-spacing: .5px
 .nav2
     position: absolute
     top: 9px
@@ -57,19 +71,22 @@ img.logo
     background-size: cover
     background-position: center
 .upper
-    padding-top: 110px
+    padding-top: 120px
     h2
         font-size: 41px
         margin-bottom: 0
     p
         font-size: 14px
-        color: $colorBlack
+        color: rgba(black, .6)
+        font-weight: bold
         a
-            color: $colorBlack
+            color: rgba(black, .6)
+            text-decoration: none
+            border-bottom: rgba(black, .4) solid 1px
 
 .lower
     position: absolute
-    bottom: 20px
+    bottom: 40px
     margin-left: auto
     margin-right: auto
     left: 0
@@ -79,32 +96,46 @@ img.logo
     text-align: center
     background: rgba(black, 0.85)
     color: white
-    padding: 10px 40px
+    padding: 11px 40px
     border-radius: 30px
     font-size: 12px
     width: 250px
     text-decoration: none
     margin: 0 8px
-    font-weight: bold
+    font-weight: 400
 .lower .btn2
     display: inline-block
     text-align: center
     background: rgba(white, 0.5)
     color: $colorBlack
-    padding: 10px 40px
+    padding: 11px 40px
     border-radius: 30px
     font-size: 12px
     width: 250px
     text-decoration: none
     margin: 0 8px
-    font-weight: bold
+    font-weight: 400
 .lower .arrow
     margin-top: 15px
     display: inline-block
+    text-decoration: none
+    font-size: 14px
+    transform: scale(4, 1.8)
+    font-weight: 300
+    font-family: "Quicksand"
+    animation: moveArrow 1s 1s infinite alternate
+    
 #slide2 .lower, #slide3 .lower
     bottom: 59px
 
-    
+.upper h2, .upper p, .lower .btn1, .lower .btn2
+    opacity: 0
+    visibility: hidden    
+
+
+.lower .arrow::before
+    content: "v"
+    color: $colorBlack
 
 @media only screen and (max-width: 990px)
     // img.logo

@@ -1,7 +1,9 @@
 link(rel="stylesheet", href="css/style.css")
 link(rel="stylesheet", href="assets/bootstrap/css/bootstrap.css")
+link(rel="stylesheet", href="assets/fullPage/src/fullPage.css")
+
+script(src='assets/fullPage/src/fullPage.js')
 script(src='script.js')
-script(src='assets/bootstrap/js/bootstrap.js')
 title Tesla 
 nav.navbar.navbar-expand-lg.navbar-light.fixed-top
   .container-fluid
@@ -27,68 +29,46 @@ nav.navbar.navbar-expand-lg.navbar-light.fixed-top
             li.nav-item
                 a.nav-link(href='#') Shop
             li.nav-item
-                a.nav-link(href='#') Account 
-section.slide#slide1 
-    .container 
-        .row 
-            .col-md-12
-                .upper.text-center
-                    h2 Model S
-                    p Order Online for 
-                        a(href="")  Touchless Delivery 
-                .lower.text-center
-                    div 
-                        a.btn1(href="") CUSTOM ORDER
-                        a.btn2(href="") EXISTING INVENTORY
-                    div
-                        a.arrow
-                            svg(width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd')
-                                path(d='M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z')
-section.slide#slide1 
-    .container 
-        .row 
-            .col-md-12
-                .upper.text-center
-                    h2 Model S
-                    p Order Online for 
-                        a(href="")  Touchless Delivery 
-                .lower.text-center
-                    div 
-                        a.btn1(href="") CUSTOM ORDER
-                        a.btn2(href="") EXISTING INVENTORY
-                    div
-                        a.arrow
-                            svg(width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd')
-                                path(d='M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z')
-section.slide#slide2 
-    .container 
-        .row 
-            .col-md-12
-                .upper.text-center
-                    h2 Model S
-                    p Order Online for 
-                        a(href="")  Touchless Delivery 
-                .lower.text-center
-                    div 
-                        a.btn1(href="") CUSTOM ORDER
-                        a.btn2(href="") EXISTING INVENTORY
-                    div
-                        a.arrow
-                            svg(width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd')
-                                path(d='M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z')
-section.slide#slide3 
-    .container 
-        .row 
-            .col-md-12
-                .upper.text-center
-                    h2 Model S
-                    p Order Online for 
-                        a(href="")  Touchless Delivery 
-                .lower.text-center
-                    div 
-                        a.btn1(href="") CUSTOM ORDER
-                        a.btn2(href="") EXISTING INVENTORY
-                    div
-                        a.arrow
-                            svg(width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd')
-                                path(d='M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z')
+                a.nav-link(href='#') Account
+#fullpage
+    section#slide1.section
+        .container 
+            .row 
+                .col-md-12
+                    .upper.text-center
+                        h2 Model S
+                        p Order Online for 
+                            a(href="")  Touchless Delivery 
+                    .lower.text-center
+                        div 
+                            a.btn1(href="") CUSTOM ORDER
+                            a.btn2(href="") EXISTING INVENTORY
+                        div
+                            a.arrow
+                                svg(width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd')
+                                    path(d='M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z')
+    section#slide2.section
+        .container 
+            .row 
+                .col-md-12
+                    .upper.text-center
+                        h2 Model Y
+                        p Order Online for 
+                            a(href="")  Touchless Delivery 
+                    .lower.text-center
+                        div 
+                            a.btn1(href="") CUSTOM ORDER
+                            a.btn2(href="") EXISTING INVENTORY
+
+    section#slide3.section
+        .container 
+            .row 
+                .col-md-12
+                    .upper.text-center
+                        h2 Model X
+                        p Order Online for 
+                            a(href="")  Touchless Delivery 
+                    .lower.text-center
+                        div 
+                            a.btn1(href="") CUSTOM ORDER
+                            a.btn2(href="") EXISTING INVENTORY

@@ -1,7 +1,7 @@
-new fullpage("#fullpage", {
-    autoScrolling: true,
-    scrollHorizontally: true
-});
+// new fullpage("#fullpage", {
+//     autoScrolling: true,
+//     scrollHorizontally: true
+// });
 
 
 $(document).ready(function(){

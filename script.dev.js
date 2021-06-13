@@ -1,9 +1,9 @@
 "use strict";
 
-new fullpage("#fullpage", {
-  autoScrolling: true,
-  scrollHorizontally: true
-});
+// new fullpage("#fullpage", {
+//     autoScrolling: true,
+//     scrollHorizontally: true
+// });
 $(document).ready(function () {
   var loading = new TimelineMax();
   loading.fromTo(".upper h2", .6, {

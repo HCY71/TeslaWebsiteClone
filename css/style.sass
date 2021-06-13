@@ -28,9 +28,11 @@ $colorBlack: rgba(black, 0.85)
         
 
 *
+    // transition: .5s
+    box-sizing: border-box
     // position: relative
 
-h1, h2, h3, h4, h5, h6, a
+h1, h2, h3, h4, h5, h6, a, .navbar-toggler
     font-family: 'Gotham-Medium'
 p
     font-family: 'Gotham-Book'
@@ -42,7 +44,19 @@ img.logo
     position: absolute
     top: 21px
     left: 15px
-.navbar-light .navbar-nav a.nav-link
+button.navbar-toggler
+    margin-top: 3px
+    padding: 12px 14px
+    border-radius: 10px
+    background-color: hsla(0,0%,50.2%,.125)
+    border: none
+nav.navbar-light .navbar-toggler
+    color: $colorBlack
+    margin-left: 8px
+    margin-right: 8px
+    font-weight: 500
+    font-size: 13px
+.navbar-light .navbar-nav a.nav-link 
     color: $colorBlack
     margin-left: 8px
     margin-right: 8px
@@ -71,18 +85,20 @@ img.logo
     background-size: cover
     background-position: center
 .upper
-    padding-top: 120px
+    padding-top: 140px
     h2
         font-size: 41px
         margin-bottom: 0
     p
         font-size: 14px
-        color: rgba(black, .6)
+        color: rgba(black, .5)
         font-weight: bold
         a
-            color: rgba(black, .6)
+            color: rgba(23,26,32, 0.7)
             text-decoration: none
-            border-bottom: rgba(black, .4) solid 1px
+            border-bottom: rgba(black, .4) solid 1.5px
+            font-weight: normal
+            // letter-spacing: 0px
 
 .lower
     position: absolute
@@ -94,7 +110,7 @@ img.logo
 .lower .btn1
     display: inline-block
     text-align: center
-    background: rgba(black, 0.85)
+    background: rgba(23,26,32, 0.8)
     color: white
     padding: 11px 40px
     border-radius: 30px
@@ -144,8 +160,38 @@ img.logo
     //     left: auto
     //     right: 15px
     .navbar
-        background-color: white
+        // background-color: white
     .nav2
         position: relative
         right: auto
         top: 0
+
+@media screen and ( max-width:  600px)
+    .section .lower
+        // bottom: 30px
+        .arrow
+            margin-top: 0
+    .section .lower div
+        display: flex   
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-left: 20px
+        padding-right: 20px
+        a.btn1, a.btn2
+            margin: 8px 0px
+            width: 100%
+    #slide1
+        background: url("../assets/img/bg1_mobile.jfif")
+        background-size: cover
+        background-position: center
+    #slide2
+        background: url("../assets/img/bg2_mobile.jfif")
+        background-size: cover
+        background-position: center
+    #slide3
+        background: url("../assets/img/bg3_mobile.jfif")
+        background-size: cover
+        background-position: center
+
+    

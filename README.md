@@ -1,3 +1,3 @@
-# TeslaWebsiteClone
+# tesla-clone
 
-[Check it out!](https://hcy71.github.io/TeslaWebsiteClone/)
+[Check it out!](https://hcy71.github.io/tesla-clone/)
